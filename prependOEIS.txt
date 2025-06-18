@@ -1,0 +1,49 @@
+A350214
+11, 7, 47, 923, 331, 31, 1, 26009371, 1233803717, 24680858269, 669735586679, 29081109754217, 1102750471329233, 17743266203566831, 6940672223924809
+A186143
+1, 1, 1, 1, 1, 1, 1, 26009371, 1233803717, 24680858269, 669735586679, 29081109754217, 1102750471329233, 6940672223924809, 6940672223924809
+A350216
+7, 19, 1, 173, 1547, 559667, 347707, 36695077, 139760989, 7931271479, 745474371799, 109761002473, 23772624806041, 90737366016702707
+A186142
+7, 7, 29, 907, 32207, 573217, 3136717, 4128253, 2181953771, 2181953771, 2181953771, 57822709718027, 1223521979279387, 48609201099882253
+
+simon@Bob:~$ time ./prependpatternocl3b_AVX2.bin prependpatterndevices.txt 17 14 
+Searching for 17 digit integers which are prime when prepended by up to 14 of the same digit.
+(3, 17743266203566831) (3, 36940672223924809) (9, 48609201099882253) (9, 49288382945634341) (3, 79168176259065779) (6, 90737366016702707)  (3, 95621753519446543)
+simon@Bob:~$ time ./prependpatternocl3b.bin prependpatterndevices.txt 16 13 
+Searching for 16 digit integers which are prime when prepended by up to 13 of the same digit.
+(3, 1102750471329233) (9, 1223521979279387) (3, 1703540179976669) (6, 1759302883672661) (6, 5240891337244267) (3, 6242627706387673) (3, 6545810446296673) (3, 6940672223924809) (3, 7412708191017457) (6, 7658045770722359) (6, 7867333150104713) (9, 8395141786228271) (3, 8576623516329469)
+simon@Bob:~$ time ./prependpatternocl3b.bin prependpatterndevices.txt 15 13 
+Searching for 15 digit integers which are prime when prepended by up to 13 of the same digit.
+-
+simon@Bob:~$ time ./prependpatternocl3b.bin prependpatterndevices.txt 14 13 
+Searching for 14 digit integers which are prime when prepended by up to 13 of the same digit.
+(6, 23772624806041)
+simon@Bob:~$ time ./prependpatternocl3b_AVX2.bin prependpatterndevices.txt 14 12 
+Searching for 14 digit integers which are prime when prepended by up to 12 of the same digit.
+(6, 12469348451111) (6, 18178015044923) (6, 23772624806041) (3, 29081109754217) (3, 32238760360747) (6, 44896017154673) (6, 47942041846327) (3, 51014080948169) (9, 57822709718027) (3, 74410870792009) (9, 84305806249429) (6, 97812769336757)
+simon@Bob:~$ time ./prependpatternocl3b_AVX2.bin prependpatterndevices.txt 13 12
+Searching for 13 digit integers which are prime when prepended by up to 12 of the same digit.
+(6, 7778953707961) 
+simon@Bob:~$ time ./prependpatternocl3b_AVX2.bin prependpatterndevices.txt 12 12
+Searching for 12 digit integers which are prime when prepended by up to 12 of the same digit.
+(6, 109761002473) (6, 844125093829) 
+simon@Bob:~$ time ./prependpatternocl3b_AVX2.bin prependpatterndevices.txt 11 12
+Searching for 11 digit integers which are prime when prepended by up to 12 of the same digit.
+-
+simon@Bob:~$ time ./prependpatternocl3b_AVX2.bin prependpatterndevices.txt 10 12
+Searching for 10 digit integers which are prime when prepended by up to 12 of the same digit.
+-
+simon@Bob:~$ time ./prependpatternocl3b_AVX2.bin prependpatterndevices.txt 12 11
+Searching for 12 digit integers which are prime when prepended by up to 11 of the same digit.
+(6, 109761002473) (9, 597740406817) (3, 669735586679) (9, 671437848691) (6, 745474371799) (6, 844125093829) (9, 934794336869) 
+simon@Bob:~$ time ./prependpatternocl3b_AVX2.bin prependpatterndevices.txt 11 11
+Searching for 11 digit integers which are prime when prepended by up to 11 of the same digit.
+-
+simon@Bob:~$ time ./prependpatternocl3b_AVX2.bin prependpatterndevices.txt 10 11
+Searching for 10 digit integers which are prime when prepended by up to 11 of the same digit.
+(9, 2181953771) 
+
+
+
+
