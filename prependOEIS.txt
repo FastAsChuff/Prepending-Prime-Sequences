@@ -7,6 +7,9 @@ A350216
 A186142
 7, 7, 29, 907, 32207, 573217, 3136717, 4128253, 2181953771, 2181953771, 2181953771, 57822709718027, 1223521979279387, 48609201099882253
 
+simon@Bob:~$ time ./prependpatternocl3b_AVX2.bin prependpatterndevices.txt 18 15 
+Searching for 18 digit integers which are prime when prepended by up to 15 of the same digit.
+-
 simon@Bob:~$ time ./prependpatternocl3b_AVX2.bin prependpatterndevices.txt 17 14 
 Searching for 17 digit integers which are prime when prepended by up to 14 of the same digit.
 (3, 17743266203566831) (3, 36940672223924809) (9, 48609201099882253) (9, 49288382945634341) (3, 79168176259065779) (6, 90737366016702707)  (3, 95621753519446543)
